@@ -1,0 +1,23 @@
+.iconos-nosotros {
+    @include tablet {
+        @include grid(3, 2rem);
+    }
+    
+}
+
+.icono {
+    text-align: center;
+    margin-top: 2.4rem;
+    i {
+        font-size: 10rem;
+        color: $amarillo;
+    }
+    h3 {
+        text-transform: uppercase;
+        padding-top: 2rem;
+    }
+
+    p {
+        margin-top: 2rem;
+    }
+}

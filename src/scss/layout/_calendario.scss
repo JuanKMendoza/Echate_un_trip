@@ -1,0 +1,109 @@
+.card-section {
+    background: rgb(49,210,242);
+    background: linear-gradient(0deg, rgba(49,210,242,1) 0%, rgba(253,187,45,1) 100%);
+    h2 {
+        color: $blanco;
+        margin-top: 0;
+        padding-top: 2rem;
+        font-weight: 500;
+    }
+}
+
+.card-contaniner {
+    display: grid;
+    padding-bottom: 2rem;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    @include tablet {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+// .card {
+//     width: 320px;
+//     height: 500px;
+//     border-radius: 2rem;
+//     overflow: hidden;
+//     border: 8px solid $verde;
+//     position: relative;
+// }
+
+.card {
+    width: 260px;
+    height: 260px;
+    @include tablet {
+        width: 280px;
+        height: 280px;
+    }
+    border-radius: 2rem;
+    overflow: hidden;
+    border: 8px solid rgba(13, 202, 240, .2);
+    position: relative;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1f3d4771;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1.5s;
+    p {
+        color: $blanco;
+    }
+}
+
+.card:hover .card-body{
+    right: 0;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.card-info {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+.card-btn {
+    width: 100%;
+    color: $blanco;
+    background: $verde;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
