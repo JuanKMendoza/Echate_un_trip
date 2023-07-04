@@ -245,18 +245,14 @@
   
 .ubicacion {
     border-top: 10px solid #494B51;
-    text-align: center;
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    @include tablet {
-        @include grid(2, 2rem);
-        align-items: center;
-    }
 
     h3 {
         text-transform: uppercase;
+        text-align: center;
     }
 
 }
